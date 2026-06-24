@@ -1,436 +1,156 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Atrangi Comedy - Viral AI Comedy Shorts | Custom Design Services</title>
+    <meta name="description" content="Atrangi Comedy — Viral AI comedy shorts in हिंदी. Thumbnail & website design, AI video generation, portfolio creation and more. Contact for collaborations." />
+    <link rel="canonical" href="https://yourdomain.example/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="Atrangi Comedy" />
+    <meta property="og:title" content="Atrangi Comedy - Viral AI Comedy Shorts" />
+    <meta property="og:description" content="Viral AI comedy shorts in हिंदी. Services: thumbnail design, video generation, portfolios and websites." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.example/" />
+    <meta property="og:image" content="https://yourdomain.example/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#1a1a2e" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Preconnect to common hosts -->
+    <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root{
+            --bg-1: #0f0f1e;
+            --bg-2: #1a1a2e;
+            --accent-1: #6D28D9;
+            --accent-2: #EC4899;
+            --accent-3: #00D9FF;
+            --muted: #a0aec0;
+            --card-bg: rgba(109, 40, 217, 0.08);
+            --glass: rgba(15,15,30,0.95);
+            --radius: 12px;
+            --max-width: 1200px;
+            --transition: 0.28s ease;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+        *{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%}
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+            background: linear-gradient(135deg,var(--bg-1) 0%, var(--bg-2) 50%, #16213e 100%);
             color: #fff;
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height:1.6;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            overflow-x:hidden;
         }
 
-        /* Header/Navigation */
-        header {
-            padding: 1.5rem 2rem;
-            background: rgba(15, 15, 30, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid #6D28D9;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo-img {
-            height: 50px;
-            width: auto;
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
-        }
-
-        .logo-text {
-            background: linear-gradient(135deg, #6D28D9, #EC4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 0.5rem;
-        }
-
-        .nav-links a:hover {
-            color: #EC4899;
-            border-bottom-color: #EC4899;
-        }
-
-        /* Hero Section */
-        .hero {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem 3rem;
-            text-align: center;
-            min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            background: linear-gradient(135deg, #EC4899, #6D28D9, #00D9FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeInUp 0.8s ease;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: #a0aec0;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease 0.2s both;
-        }
-
-        .hero-desc {
-            font-size: 1rem;
-            max-width: 600px;
-            color: #cbd5e0;
-            margin-bottom: 2rem;
-            animation: fadeInUp 0.8s ease 0.4s both;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease 0.6s both;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #6D28D9, #EC4899);
-            color: white;
-            box-shadow: 0 10px 30px rgba(237, 100, 166, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(237, 100, 166, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #EC4899;
-            border: 2px solid #EC4899;
-        }
-
-        .btn-secondary:hover {
-            background: #EC4899;
-            color: #fff;
-            transform: translateY(-3px);
-        }
-
-        /* Section Styling */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 3rem;
-            text-align: center;
-            background: linear-gradient(135deg, #EC4899, #6D28D9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Videos Section */
-        .videos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .video-card {
-            background: rgba(109, 40, 217, 0.1);
-            border: 2px solid rgba(109, 40, 217, 0.3);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .video-card:hover {
-            border-color: #EC4899;
-            box-shadow: 0 0 30px rgba(237, 100, 166, 0.3);
-            transform: translateY(-5px);
-        }
-
-        .video-thumbnail {
-            width: 100%;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            background: #000;
-        }
-
-        .video-info {
-            padding: 1.5rem;
-        }
-
-        .play-icon {
+        /* Skip link */
+        .skip-link {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            background: rgba(237, 100, 166, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            opacity: 0;
-            transition: opacity 0.3s;
+            top: -40px;
+            left: 1rem;
+            background: #111;
+            color: #fff;
+            padding: .5rem .75rem;
+            border-radius: 6px;
+            z-index: 9999;
+            transition: top .15s;
         }
+        .skip-link:focus { top: 1rem; outline: 3px solid var(--accent-2); }
 
-        .video-thumbnail-container {
-            position: relative;
-            overflow: hidden;
+        header{
+            padding: 1rem 1.25rem;
+            background: var(--glass);
+            backdrop-filter: blur(8px);
+            border-bottom: 2px solid var(--accent-1);
+            position: sticky; top:0; z-index:1000;
         }
+        nav{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+        .logo{display:flex;align-items:center;gap:.75rem;font-weight:900}
+        .logo-img{height:44px;width:44px;border-radius:50%;object-fit:cover;box-shadow:0 0 16px rgba(236,72,153,0.35)}
+        .logo-text{background:linear-gradient(135deg,var(--accent-1),var(--accent-2));-webkit-background-clip:text;color:transparent}
+        .nav-links{display:flex;gap:1rem;list-style:none}
+        .nav-links a{color:#fff;text-decoration:none;padding:.25rem .25rem;border-bottom:2px solid transparent;transition:color var(--transition)}
+        .nav-links a:hover, .nav-links a:focus{color:var(--accent-2);border-bottom-color:var(--accent-2);outline:none}
 
-        .video-card:hover .play-icon {
-            opacity: 1;
+        main{max-width:var(--max-width);margin:0 auto;padding:2rem}
+
+        .hero{display:flex;flex-direction:column;align-items:center;text-align:center;min-height:70vh;padding:3rem 1rem;justify-content:center;gap:1rem}
+        .hero img.hero-logo{width:180px;height:180px;object-fit:contain;filter:drop-shadow(0 0 26px rgba(236,72,153,0.35));border-radius:12px}
+        h1{font-size:3rem;line-height:1.05;font-weight:900;background:linear-gradient(135deg,var(--accent-2),var(--accent-1),var(--accent-3));-webkit-background-clip:text;color:transparent}
+        p.hero-sub{color:var(--muted);font-size:1.15rem}
+        p.hero-desc{color:#cbd5e0;max-width:680px}
+
+        .cta-buttons{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+        .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.2rem;border-radius:10px;border:none;cursor:pointer;text-decoration:none;font-weight:600;transition:transform var(--transition),box-shadow var(--transition)}
+        .btn:focus{outline:3px solid rgba(236,72,153,0.25)}
+        .btn-primary{background:linear-gradient(135deg,var(--accent-1),var(--accent-2));color:#fff;box-shadow:0 10px 30px rgba(237,100,166,0.25)}
+        .btn-primary:hover{transform:translateY(-3px)}
+        .btn-secondary{background:transparent;color:var(--accent-2);border:2px solid var(--accent-2)}
+        .btn-secondary:hover{background:var(--accent-2);color:#fff}
+
+        section{padding:3rem 0}
+
+        h2{font-size:2rem;text-align:center;margin-bottom:1.5rem;font-weight:900;background:linear-gradient(135deg,var(--accent-2),var(--accent-1));-webkit-background-clip:text;color:transparent}
+
+        /* Videos */
+        .videos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+        .video-card{
+            background:var(--card-bg);border:2px solid rgba(109,40,217,0.22);border-radius:var(--radius);overflow:hidden;transition:transform var(--transition),box-shadow var(--transition);
+            display:block;text-decoration:none;color:inherit;
         }
+        .video-card:focus{outline:3px solid rgba(109,40,217,0.18)}
+        .video-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.35);border-color:var(--accent-2)}
+        .video-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000;display:block}
+        .video-info{padding:1rem}
+        .play-icon{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(237,100,166,0.95);font-size:1.1rem;color:#fff;opacity:0;transition:opacity .18s}
+        .video-thumb-wrap{position:relative;overflow:hidden}
+        .video-card:hover .play-icon{opacity:1}
 
-        /* Services Section */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-        }
+        /* Services */
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+        .service-card{padding:1.25rem;border-radius:var(--radius);background:linear-gradient(135deg, rgba(109,40,217,.12), rgba(236,72,153,.06));border:2px solid rgba(109,40,217,.2);text-align:center}
+        .service-card h3{color:var(--accent-2);margin-top:.5rem}
+        .service-icon{font-size:2rem}
 
-        .service-card {
-            background: linear-gradient(135deg, rgba(109, 40, 217, 0.2), rgba(236, 72, 153, 0.1));
-            border: 2px solid rgba(109, 40, 217, 0.4);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            transition: all 0.3s;
-        }
+        /* Contact */
+        .contact-section{background:linear-gradient(135deg, rgba(109,40,217,.06), rgba(0,217,255,.02));padding:2rem;border-radius:var(--radius);border:2px solid rgba(109,40,217,.15);text-align:center}
 
-        .service-card:hover {
-            border-color: #EC4899;
-            background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(109, 40, 217, 0.2));
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(237, 100, 166, 0.2);
-        }
+        /* Stats */
+        .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+        .stat{padding:1rem;border-radius:var(--radius);background:var(--card-bg);text-align:center;border:2px solid rgba(109,40,217,.16)}
+        .stat-number{font-weight:900;font-size:1.5rem;color:var(--accent-2)}
 
-        .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+        footer{background:var(--glass);padding:1.5rem;border-top:2px solid var(--accent-1);text-align:center;color:var(--muted)}
 
-        .service-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
-            color: #EC4899;
-        }
-
-        .service-card p {
-            color: #a0aec0;
-            font-size: 0.9rem;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: linear-gradient(135deg, rgba(109, 40, 217, 0.15), rgba(0, 217, 255, 0.05));
-            border: 2px solid rgba(109, 40, 217, 0.4);
-            border-radius: 12px;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .contact-section h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            background: rgba(109, 40, 217, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid rgba(109, 40, 217, 0.3);
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .contact-item h3 {
-            color: #EC4899;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item a {
-            color: #00D9FF;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .contact-item a:hover {
-            color: #EC4899;
-        }
-
-        /* Stats Section */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .stat {
-            background: rgba(109, 40, 217, 0.1);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 2px solid rgba(109, 40, 217, 0.3);
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #EC4899;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: #a0aec0;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background: rgba(15, 15, 30, 0.95);
-            border-top: 2px solid #6D28D9;
-            padding: 2rem;
-            text-align: center;
-            color: #a0aec0;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Focus and reduced motion */
+        :focus{outline-offset:3px}
+        @media (prefers-reduced-motion: reduce){
+            *{animation-duration:0.001ms !important;transition-duration:0.001ms !important}
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-                font-size: 0.9rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-
-            .videos-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-info {
-                flex-direction: column;
-            }
-
-            .contact-item {
-                min-width: 100%;
-            }
+        @media (max-width:768px){
+            h1{font-size:2rem}
+            .hero img.hero-logo{width:140px;height:140px}
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header role="banner">
+        <nav aria-label="Primary" role="navigation">
             <div class="logo">
-                <img src="atrangi-logo.png" alt="Atrangi Comedy Logo" class="logo-img">
+                <img src="/atrangi-logo.png" alt="Atrangi Comedy logo" class="logo-img" loading="lazy" />
                 <span class="logo-text">Atrangi Comedy</span>
             </div>
             <ul class="nav-links">
@@ -441,246 +161,185 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div style="margin-bottom: 2rem;">
-            <img src="atrangi-logo.png" alt="Atrangi Comedy Logo" style="width: 200px; height: 200px; object-fit: contain; filter: drop-shadow(0 0 30px rgba(236, 72, 153, 0.4)); animation: fadeInDown 0.8s ease;">
-        </div>
-        <h1>😂 Atrangi Comedy 🔥</h1>
-        <p class="hero-subtitle">Viral AI Comedy Shorts | Daily Entertainment 🚀</p>
-        <p class="hero-desc">
-            हिंदी भाषा में फनीएस्ट कंटेंट! AI magic + entertainment = pure fun! 
-            <br>90 legends से शुरुआत, 1K का target! 🎯
-        </p>
-        <div class="cta-buttons">
-            <a href="https://www.youtube.com/@Atrangi-Comedy_1" class="btn btn-primary" target="_blank">
-                📺 YouTube Channel
-            </a>
-            <a href="#contact" class="btn btn-secondary">📧 Contact Us</a>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stat">
-            <div class="stat-number">90+</div>
-            <div class="stat-label">Subscribers</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">1K</div>
-            <div class="stat-label">Target Subscribers 🎯</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">∞</div>
-            <div class="stat-label">Viral Potential</div>
-        </div>
-    </section>
-
-    <!-- Videos Section -->
-    <section id="videos">
-        <h2>🎥 Featured Videos</h2>
-        <div class="videos-grid">
-            <div class="video-card">
-                <div class="video-thumbnail-container">
-                    <img src="https://i.ytimg.com/vi/zeJj2nW7g2E/hqdefault.jpg" alt="Video 1" class="video-thumbnail">
-                    <div class="play-icon">▶️</div>
-                </div>
-                <div class="video-info">
-                    <p>Latest Viral AI Comedy</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <div class="video-thumbnail-container">
-                    <img src="https://i.ytimg.com/vi/2zMI77_RHs8/hqdefault.jpg" alt="Video 2" class="video-thumbnail">
-                    <div class="play-icon">▶️</div>
-                </div>
-                <div class="video-info">
-                    <p>Funny Meme Video</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <div class="video-thumbnail-container">
-                    <img src="https://i.ytimg.com/vi/vCWeSn5yHtQ/hqdefault.jpg" alt="Video 3" class="video-thumbnail">
-                    <div class="play-icon">▶️</div>
-                </div>
-                <div class="video-info">
-                    <p>Trending Comedy Shorts</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <div class="video-thumbnail-container">
-                    <img src="https://i.ytimg.com/vi/ERzqfc_0uAE/hqdefault.jpg" alt="Video 4" class="video-thumbnail">
-                    <div class="play-icon">▶️</div>
-                </div>
-                <div class="video-info">
-                    <p>AI Magic Entertainment</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <div class="video-thumbnail-container">
-                    <img src="https://i.ytimg.com/vi/1aMOtrHrJ8g/hqdefault.jpg" alt="Video 5" class="video-thumbnail">
-                    <div class="play-icon">▶️</div>
-                </div>
-                <div class="video-info">
-                    <p>Fresh Viral Content</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Videos Section -->
-    <section id="client-videos">
-        <h2>💼 Client Portfolio Videos</h2>
-        <p style="text-align: center; color: #a0aec0; margin-bottom: 3rem; font-size: 1.1rem;">
-            🎨 अपने काम को showcase करें - 6 best videos:
-        </p>
-        <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(109, 40, 217, 0.1)); padding: 3rem 2rem; border: 2px dashed #EC4899; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
-            <div style="margin-bottom: 1.5rem;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">📁</div>
-                <p style="color: #cbd5e0; margin-bottom: 1rem; font-size: 1.1rem;">
-                    <strong>6 Client Videos</strong> - अपने बेहतरीन काम को clients के सामने रखें
-                </p>
-                <p style="color: #a0aec0; margin-bottom: 1rem;">
-                    Thumbnail Design | Website Design | Video Generation | Portfolio | Image Design
-                </p>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1jMhyXKqbcpWKQKjBNuZJ7sYxZtmIH01v" target="_blank" class="btn btn-primary">
-                📂 View All Portfolio Videos
-            </a>
-        </div>
-        <p style="text-align: center; color: #a0aec0; font-size: 0.9rem; margin-top: 2rem;">
-            💡 Tip: यहाँ अपने clients के लिए काम किए हुए 6 best videos add करें
-        </p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>🎨 Our Services</h2>
-        <p style="text-align: center; color: #a0aec0; margin-bottom: 3rem; font-size: 1.1rem;">
-            ✨ हम आपके लिए create करते हैं:
-        </p>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🎬</div>
-                <h3>Thumbnail Design</h3>
-                <p>Eye-catching thumbnails जो views बढ़ाएं आपके videos के लिए</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Website Design</h3>
-                <p>Professional websites जो convert करें visitors को customers में</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🎥</div>
-                <h3>Video Generation</h3>
-                <p>AI-powered viral shorts और trending video content creation</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">📁</div>
-                <h3>Portfolio Making</h3>
-                <p>Showcase करें अपना काम professionally designed portfolio से</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🖼️</div>
-                <h3>Image Generation</h3>
-                <p>Unique AI-generated images और graphics for content</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-section">
-            <h2>📞 Let's Collaborate! 🚀</h2>
-            <p style="color: #a0aec0; margin-bottom: 2rem; font-size: 1.1rem;">
-                अपने business के लिए हमारी services चाहिए? Contact करें आज ही!
+    <main id="main" role="main">
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <img src="/atrangi-logo.png" alt="Atrangi Comedy logo" class="hero-logo" loading="lazy" />
+            <h1 id="hero-heading">😂 Atrangi Comedy 🔥</h1>
+            <p class="hero-sub">Viral AI Comedy Shorts | Daily Entertainment 🚀</p>
+            <p class="hero-desc">
+                हिंदी भाषा में फनीएस्ट कंटेंट! AI magic + entertainment = pure fun!
+                <br>शुरुआत: 90+ subscribers • लक्ष्य: 1K subscribers 🎯
             </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>📧 Email</h3>
-                    <a href="mailto:aikumar.5318@gmail.com">aikumar.5318@gmail.com</a>
+            <div class="cta-buttons" role="group" aria-label="Primary calls to action">
+                <a class="btn btn-primary" href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener noreferrer">
+                    📺 YouTube Channel
+                </a>
+                <a class="btn btn-secondary" href="#contact">📧 Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section aria-label="Stats">
+            <div class="stats" role="list" aria-label="Statistics">
+                <div class="stat" role="listitem" aria-label="Subscribers">
+                    <div class="stat-number" aria-hidden="true">90+</div>
+                    <div class="stat-label">Subscribers</div>
                 </div>
-                <div class="contact-item">
-                    <h3>🎥 YouTube</h3>
-                    <a href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank">@Atrangi-Comedy_1</a>
+                <div class="stat" role="listitem" aria-label="Target subscribers">
+                    <div class="stat-number">1K</div>
+                    <div class="stat-label">Target Subscribers 🎯</div>
                 </div>
-                <div class="contact-item">
-                    <h3>🤝 Business Enquiries</h3>
-                    <p style="color: #a0aec0;">Sponsorships, collaborations & more</p>
+                <div class="stat" role="listitem" aria-label="Viral potential">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Viral Potential</div>
                 </div>
             </div>
-            <a href="mailto:aikumar.5318@gmail.com?subject=Business%20Enquiry%20-%20Atrangi%20Comedy%20Services" class="btn btn-primary" style="margin-top: 1rem;">
-                ✉️ Send Enquiry Now
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Brands Section -->
-    <section style="background: rgba(109, 40, 217, 0.05); padding: 3rem 2rem;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h3 style="text-align: center; color: #a0aec0; margin-bottom: 2rem;">🌟 Associated Brands & Partners</h3>
-            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(109, 40, 217, 0.1); border: 2px solid #EC4899; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                        <span style="color: #a0aec0; font-size: 3rem;">🎬</span>
+        <!-- Videos -->
+        <section id="videos" aria-labelledby="videos-heading">
+            <h2 id="videos-heading">🎥 Featured Videos</h2>
+
+            <div class="videos-grid" role="list">
+                <!-- Make video card an accessible <a> linking to YT -->
+                <a class="video-card" role="listitem" href="https://youtu.be/zeJj2nW7g2E" target="_blank" rel="noopener noreferrer" aria-label="Open Latest Viral AI Comedy on YouTube">
+                    <div class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://i.ytimg.com/vi/zeJj2nW7g2E/hqdefault.jpg" alt="Latest Viral AI Comedy thumbnail" loading="lazy" />
+                        <div class="play-icon" aria-hidden="true">▶️</div>
                     </div>
-                    <p style="color: #cbd5e0; font-weight: 600;">Atrangi Comedy</p>
+                    <div class="video-info"><p>Latest Viral AI Comedy</p></div>
+                </a>
+
+                <a class="video-card" role="listitem" href="https://youtu.be/2zMI77_RHs8" target="_blank" rel="noopener noreferrer" aria-label="Open Funny Meme Video on YouTube">
+                    <div class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://i.ytimg.com/vi/2zMI77_RHs8/hqdefault.jpg" alt="Funny Meme Video thumbnail" loading="lazy" />
+                        <div class="play-icon" aria-hidden="true">▶️</div>
+                    </div>
+                    <div class="video-info"><p>Funny Meme Video</p></div>
+                </a>
+
+                <a class="video-card" role="listitem" href="https://youtu.be/vCWeSn5yHtQ" target="_blank" rel="noopener noreferrer" aria-label="Open Trending Comedy Shorts on YouTube">
+                    <div class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://i.ytimg.com/vi/vCWeSn5yHtQ/hqdefault.jpg" alt="Trending Comedy Shorts thumbnail" loading="lazy" />
+                        <div class="play-icon" aria-hidden="true">▶️</div>
+                    </div>
+                    <div class="video-info"><p>Trending Comedy Shorts</p></div>
+                </a>
+
+                <a class="video-card" role="listitem" href="https://youtu.be/ERzqfc_0uAE" target="_blank" rel="noopener noreferrer" aria-label="Open AI Magic Entertainment on YouTube">
+                    <div class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://i.ytimg.com/vi/ERzqfc_0uAE/hqdefault.jpg" alt="AI Magic Entertainment thumbnail" loading="lazy" />
+                        <div class="play-icon" aria-hidden="true">▶️</div>
+                    </div>
+                    <div class="video-info"><p>AI Magic Entertainment</p></div>
+                </a>
+
+                <a class="video-card" role="listitem" href="https://youtu.be/1aMOtrHrJ8g" target="_blank" rel="noopener noreferrer" aria-label="Open Fresh Viral Content on YouTube">
+                    <div class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://i.ytimg.com/vi/1aMOtrHrJ8g/hqdefault.jpg" alt="Fresh Viral Content thumbnail" loading="lazy" />
+                        <div class="play-icon" aria-hidden="true">▶️</div>
+                    </div>
+                    <div class="video-info"><p>Fresh Viral Content</p></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Client Portfolio -->
+        <section id="client-videos" aria-labelledby="client-heading">
+            <h2 id="client-heading">💼 Client Portfolio Videos</h2>
+            <p style="text-align:center;color:var(--muted);margin-bottom:1rem;">🎨 अपने काम को showcase करें - 6 best videos</p>
+            <div style="background:linear-gradient(135deg, rgba(236,72,153,.08), rgba(109,40,217,.06));padding:1.5rem;border-radius:12px;border:2px dashed #EC4899; text-align:center">
+                <div style="margin-bottom:1rem">
+                    <div style="font-size:2.25rem;margin-bottom:.5rem">📁</div>
+                    <p style="color:#cbd5e0;font-weight:600"><strong>6 Client Videos</strong> - अपने बेहतरीन काम को clients के सामने रखें</p>
+                    <p style="color:var(--muted)">Thumbnail Design | Website Design | Video Generation | Portfolio | Image Design</p>
                 </div>
-                
-                <!-- Victus Logo Placeholder -->
-                <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(109, 40, 217, 0.1); border: 2px dashed #6D28D9; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                        <span style="color: #a0aec0; font-size: 2rem;">📌</span>
-                    </div>
-                    <p style="color: #a0aec0; font-size: 0.9rem;">Add Your Logo/Brand</p>
+                <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1jMhyXKqbcpWKQKjBNuZJ7sYxZtmIH01v" target="_blank" rel="noopener noreferrer">
+                    📂 View All Portfolio Videos
+                </a>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">🎨 Our Services</h2>
+            <p style="text-align:center;color:var(--muted);margin-bottom:1.25rem;">✨ हम आपके लिए create करते हैं:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>Thumbnail Design</h3>
+                    <p>Eye-catching thumbnails जो views बढ़ाएं आपके videos के लिए</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Design</h3>
+                    <p>Professional websites जो convert करें visitors को customers में</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3>Video Generation</h3>
+                    <p>AI-powered viral shorts और trending video content creation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📁</div>
+                    <h3>Portfolio Making</h3>
+                    <p>Showcase करें अपना काम professionally designed portfolio से</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🖼️</div>
+                    <h3>Image Generation</h3>
+                    <p>Unique AI-generated images और graphics for content</p>
                 </div>
             </div>
-            <p style="text-align: center; color: #a0aec0; margin-top: 2rem; font-size: 0.9rem;">
-                💡 अपना logo/brand यहाँ add करना चाहते हो? Contact us!
-            </p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">📞 Let's Collaborate! 🚀</h2>
+            <div class="contact-section">
+                <p style="color:var(--muted);margin-bottom:1rem">अपने business के लिए हमारी services चाहिए? Contact करें आज ही!</p>
+                <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                    <div style="min-width:220px;padding:1rem;border-radius:8px;background:var(--card-bg);border:1px solid rgba(109,40,217,.12);text-align:center">
+                        <h3 style="color:var(--accent-2)">📧 Email</h3>
+                        <a href="mailto:aikumar.5318@gmail.com">aikumar.5318@gmail.com</a>
+                    </div>
+                    <div style="min-width:220px;padding:1rem;border-radius:8px;background:var(--card-bg);border:1px solid rgba(109,40,217,.12);text-align:center">
+                        <h3 style="color:var(--accent-2)">🎥 YouTube</h3>
+                        <a href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener noreferrer">@Atrangi-Comedy_1</a>
+                    </div>
+                    <div style="min-width:220px;padding:1rem;border-radius:8px;background:var(--card-bg);border:1px solid rgba(109,40,217,.12);text-align:center">
+                        <h3 style="color:var(--accent-2)">🤝 Business Enquiries</h3>
+                        <p style="color:var(--muted)">Sponsorships, collaborations & more</p>
+                    </div>
+                </div>
+                <a class="btn btn-primary" style="margin-top:1rem" href="mailto:aikumar.5318@gmail.com?subject=Business%20Enquiry%20-%20Atrangi%20Comedy%20Services">✉️ Send Enquiry Now</a>
+            </div>
+        </section>
+
+        <!-- Brands -->
+        <section aria-label="Brands">
+            <div style="text-align:center;max-width:var(--max-width);margin:0 auto;padding:1rem">
+                <h3 style="color:var(--muted);margin-bottom:1rem">🌟 Associated Brands & Partners</h3>
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap">
+                    <div style="text-align:center">
+                        <div style="width:120px;height:120px;background:rgba(109,40,217,.06);border-radius:12px;display:flex;align-items:center;justify-content:center;border:2px solid #EC4899">
+                            <span style="font-size:2.25rem;color:#cbd5e0">🎬</span>
+                        </div>
+                        <p style="color:#cbd5e0;font-weight:600">Atrangi Comedy</p>
+                    </div>
+                    <div style="text-align:center">
+                        <div style="width:120px;height:120px;background:rgba(109,40,217,.06);border-radius:12px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--accent-1)">
+                            <span style="font-size:2rem;color:var(--muted)">📌</span>
+                        </div>
+                        <p style="color:var(--muted);font-size:.9rem">Add Your Logo/Brand</p>
+                    </div>
+                </div>
+                <p style="color:var(--muted);margin-top:1rem">💡 अपना logo/brand यहाँ add करना चाहते हो? Contact us!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
         <p>© 2026 Atrangi Comedy. All rights reserved. 🎬</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">Turning ideas into viral content 🚀 | AI-Powered Entertainment 🤖</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // Video card click to YouTube
-        document.querySelectorAll('.video-card').forEach((card, index) => {
-            const videoIds = [
-                'zeJj2nW7g2E',
-                '2zMI77_RHs8',
-                'vCWeSn5yHtQ',
-                'ERzqfc_0uAE',
-                '1aMOtrHrJ8g'
-            ];
-            card.addEventListener('click', () => {
-                window.open(`https://youtu.be/${videoIds[index]}`, '_blank');
-            });
-            card.style.cursor = 'pointer';
-        });
-    </script>
-</body>
-</html>
+        <p style="margin-top:.5rem;col
